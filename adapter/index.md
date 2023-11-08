@@ -11,24 +11,24 @@
 Condition: Used  
 Ended:May 23, 2022, 9:53AM  
 This is for a vintage used Monolux camera adapter micro-photography and\or Astro-photography to camera adapter. It is in very good condition. Please see photos  
-![](s-l1608.jpg)  
-![](s-l1600.jpg)  
-![](s-l1601.jpg)  
-![](s-l1606.jpg)  
-![](s-l1602.jpg)  
-![](s-l1603.jpg)  
-![](s-l1604.jpg)  
-![](s-l1605.jpg)  
-![](s-l1607.jpg)  
+![](./s-l1608.jpg)  
+![](./s-l1600.jpg)  
+![](./s-l1601.jpg)  
+![](./s-l1606.jpg)  
+![](./s-l1602.jpg)  
+![](./s-l1603.jpg)  
+![](./s-l1604.jpg)  
+![](./s-l1605.jpg)  
+![](./s-l1607.jpg)  
 
 ---
 
 ## M42 to 30mm to 23.2mm Microscope Adapter Camera Eyepiece Tube w/ C-mount Thread  
 eBay item number: [224158403124](https://www.ebay.com/itm/224158403124)  
 
-![](od30mm.jpg)  
-![](id23.2mm.jpg)  
-![](C-mount.jpg)  
+![](./od30mm.jpg)  
+![](./id23.2mm.jpg)  
+![](./C-mount.jpg)  
 
  *Dear visitors, we are Cnscope, and we are professional microscope supplier*  
 
@@ -47,7 +47,7 @@ full metal-----Aluminum alloy
  *received 10 Aug 2022*  
 M42x0.75 thread and 30mm o.d. are as advertised,  
 but i.d. is far too loose for 23.2mm oculars:  
-![](M42-C-mount-32-23.2mm.jpg)  
+![](./M42-C-mount-32-23.2mm.jpg)  
 ... corrected by shimming i.d. with bits of HVAC pressure-sensitive aluminum tape.  
 [MicrobeHunter.com: M42 - 30mm - 23.2mm eye tube adapter warning.](https://www.microbehunter.com/microscopy-forum/viewtopic.php?f=14&t=16026)  
 
