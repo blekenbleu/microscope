@@ -27,7 +27,7 @@ A camera with (250mm) telephoto lens focused at infinity,
 relative to oculars (image by iPhone):
 ![ocular scale](Images/AfocalEPIscale.jpg)  
 This issue is addressed as [T / UW "direct" projection](Trinoc/#T-UW)
-and arguably better using [a Zeiss Triotar](../../Canon/#Triotar).  
+and arguably better using [a Zeiss Triotar](../../static/Canon/#Triotar).  
 
 # Other  
 Other Optiphot infinity configurations
