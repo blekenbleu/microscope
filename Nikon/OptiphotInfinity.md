@@ -1,7 +1,8 @@
 ---
 ---
+ *[back](photo)*  
+
 ### (almost) Infinity-focused Optiphot trinocular heads  
- *[back](photo)*
 Nikon Optiphot (CF) M Plan & EPI objectives have 210mm tube length.  
 Only ["F" trinolar head](Trinoc/#F) focus objective rays at 210mm;  
 "T" and "UW" heads have a pseudo-[infinity space around prisms](https://www.microbehunter.com/microscopy-forum/viewtopic.php?f=28&t=9092&start=60#p93275):
@@ -14,18 +15,18 @@ but with [a bit under a 0.5x magnification](https://www.microbehunter.com/micros
 ### 200mm zoom telephoto
 A camera with (250mm) telephoto lens focused at infinity,  
 [as discussed on photomacrography.net](https://www.photomacrography.net/forum/viewtopic.php?t=9438):  
-![Canon 90D+250mm](Images/Optiphot_Infinity.jpg)  
+![Canon 90D+250mm](/microscope/NikonImages/Optiphot_Infinity.jpg)  
 
 ... captured these images:  
-![stainless millimeter rule](Images/mmRule.jpg)   
+![stainless millimeter rule](/microscope/Nikon/Images/mmRule.jpg)   
 *stainless millimeter rule*  
 
-![calibration slide](Images/EPIscale.jpg)  
+![calibration slide](/microscope/Nikon/Images/EPIscale.jpg)  
 *same target as below*  
 
 ... however those strongly vignetted images are magnified about 3X  
 relative to oculars (image by iPhone):
-![ocular scale](Images/AfocalEPIscale.jpg)  
+![ocular scale](/microscope/Nikon/Images/AfocalEPIscale.jpg)  
 This issue is addressed as [T / UW "direct" projection](Trinoc/#T-UW)
 and arguably better using [a Zeiss Triotar](../../static/Canon/#Triotar).  
 
