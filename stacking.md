@@ -1,9 +1,9 @@
 ---
 ---
-### focus stacking  
-  *[back](index.html)*
+  *[back]((/microscope/index.html)*
 
- [*links*](microscope/macro_links.htm#FOCUS)  
+### focus stacking  
+ [*links*](/microscope/macro_links.htm#FOCUS)  
 Some images, including highly magnified, want more depth of focus.  
 Other than by retaking with smaller aperture  
 (which is liable to increasing noise, motion blur and/or diffraction),  
