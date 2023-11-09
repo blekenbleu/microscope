@@ -15,7 +15,7 @@ but with [a bit under a 0.5x magnification](https://www.microbehunter.com/micros
 ### 200mm zoom telephoto
 A camera with (250mm) telephoto lens focused at infinity,  
 [as discussed on photomacrography.net](https://www.photomacrography.net/forum/viewtopic.php?t=9438):  
-![Canon 90D+250mm](/microscope/NikonImages/Optiphot_Infinity.jpg)  
+![Canon 90D+250mm](/microscope/Nikon/Images/Optiphot_Infinity.jpg)  
 
 ... captured these images:  
 ![stainless millimeter rule](/microscope/Nikon/Images/mmRule.jpg)   
