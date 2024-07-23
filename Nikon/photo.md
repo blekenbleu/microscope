@@ -4,7 +4,7 @@
 ### Optiphot photography  
 Released when photography meant film,
 semi-automated image capture involved complex optics:  
-![UFX-DX attachment](Images/UFX-DX.jpg)  
+![UFX-DX attachment](./Images/UFX-DX.jpg)  
 
 .. for a camera body:  
 ![camera body](Images/FX-35DX.jpg)  
