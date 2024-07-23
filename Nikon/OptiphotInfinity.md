@@ -33,8 +33,9 @@ and arguably better using [a Zeiss Triotar](../../static/Canon/#Triotar).
 # Other  
 Other Optiphot infinity configurations
 - Infinity objectives thru [trinoc "F" head](Trinoc/#F) to an infinity-focused [tube lens](../tube)  
-  Eclipse infinity heads [reportedly fit Optiphot](https://lavinia.as.arizona.edu/~mtuell/scopes/Eclipse.php) via Optiphot 100 vertical illuminator.  
-- Optiphot 100/150/200 were infinity scopes with otherwise seemingly incompatible infinity objectives,
-  presumably NOT being CFI60.  
+  Eclipse infinity heads [fit Optiphot](https://lavinia.as.arizona.edu/~mtuell/scopes/Eclipse.php) via Optiphot 100/150 vertical illuminator.  
+- Optiphot 100/150/200 were infinity scopes with otherwise seemingly incompatible *CF Plan* infinity objectives,
+  NOT CFI60.  
+  ![Optiphot 150](/microscope/Nikon/Images/Optiphot150.jpg)
 - [UM-2 measurescope takes Optiphot style nosepieces](https://www.photomacrography.net/forum/viewtopic.php?f=25&t=43442)  
 
