@@ -12,13 +12,13 @@ often with a so-called tube length of 160mm.
 
 However, there are any number of useful accessories which could be inserted  
 between objectives and whatever might be beyond that tube length.  
-Rather than change objectives, these accessories would modify rays to refocus at the new length.  
+Rather than change objectives, these modify rays to refocus at the new length.  
 An alternative is to use infinity objectives,  
 whose focus are largely unaffected by changes in distance between them and  
-a so-called tube lens, which converts those parallel rays back to finite,  
-which oculars in turn change back to nearly parallel rays for observers' eyes.  
-A camera lens of focal distance appropriate for magnifying objective image circle to sensor size  
-can serve as a tube lens, provided that infinity objectives are fully corrected.  
+a so-called tube lens, which converts those parallel rays back to finite  
+for oculars to in turn set focus distance for observers' eyes.  
+A camera lens of appropriate focal length can serve as a tube lens,  
+provided that infinity objectives are fully corrected.  
 ![Triotar in UW photo port](/static/Canon/Triotar_UW.jpg)  
 
 Using another lens to obtain virtual images from parallel rays
