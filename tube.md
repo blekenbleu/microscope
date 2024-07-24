@@ -35,7 +35,7 @@ with observer replaced by a camera with lens focused near infinity.
 This camera can alternatively be inserted in place of an infinity scope's tube lens.  
 
 A camera lens' focal length determines overall image size / magnification.  
-A [40mm lens](M48.htm#pancake) focused over a 10X microscope ocular typically fills an APS-C sensor,  
-depending on oculars' and objectives' field diameters.  
+A [40mm lens](/microscope/M48.htm#pancake) focused over a 10X microscope ocular typically fills an APS-C sensor,  
+depending on objectives' field diameters.  
 To replace an infinity microscope objective's tube lens,  
 a telephoto camera lens (e.g. 100-200mm) is typically wanted.  
