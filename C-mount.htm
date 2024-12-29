@@ -1,7 +1,7 @@
 <html><head>
 <link rel='stylesheet' type='text/css' href='../static/my.css'>
 
-<title>Confocal microscopy</title>
+<title>C-mount and sensors</title>
 </head>
 
 <body>
@@ -13,12 +13,13 @@
 <a href="https://www.gixen.com/index.php" name="9e092736783d0da1dfd8413d57d10faf" target="_blank" >
 <img align=right src="https://www.gixen.com/images/gixenlink.gif" border="0" alt="Auction Sniper" title="Auction Sniper">
 </a>
-<h3><a href=https://en.wikipedia.org/wiki/C_mount>C-mount</a></h3></a>
+<h3><a href=https://en.wikipedia.org/wiki/C_mount>C-mount and sensors</a></h3></a>
 Traditionally associated with 16mm movie (then video) cameras,<br>
 C-mount (and too similar CS-mount) are often used for microscope camera adapters<br>
  and industrial USB/HDMI digital camera bodies,<br>
-for which one common brand is <a href=https://www.hayear.com/?list/36>Hayear</a>.</a>
-While there are C-mount cameras with nominal 1-inch sensors, they must suffer vignetting:<br>
+for which one common brand is <a href=https://www.hayear.com/?list/36>Hayear</a>.</a><br><br>
+
+C-mount cameras with nominal 1-inch sensors are liable to vignetting:<br>
 <img src=https://www.thorlabs.de/images/tabimages/C-Mount_Specs_A2-780.jpg><ul>
 <li><i>CS-mount FFD</i>:&nbsp <code>12.526mm</code>
 <li><i>metric thread spec for both</i>:&nbsp <code>25.4x0.75</code>
@@ -42,16 +43,54 @@ While there are C-mount cameras with nominal 1-inch sensors, they must suffer vi
 <tr><td><a href=https://www.mouser.com/datasheet/2/1051/FSM-IMX485_Datasheet_v1-0_Brief-1864556.pdf>Sony IMX485</a></td><td>3840 (H) x 2160 (V) (8.3mp)</td><td>rolling shutter</td><td>90 fps</td><td>type 1/1.2</td></tr>
 <tr><td><a href=https://www.sony-semicon.com/files/62/flyer_security/IMX585-AAQJ1_Flyer.pdf>Sony IMX585</a></td><td>3840 (H) x 2160 (V) (8.3mp)</td><td>rolling shutter</td><td>90 fps</td><td>type 1/1.2</td></tr>
 <tr><td><a href=https://www.mouser.com/datasheet/2/1051/FSM-IMX334_Datasheet_v1-0f_Brief-1815660.pdf>Sony IMX334</a></td><td>3840 (H) x 2160 (V) (8.3mp)</td><td>rolling shutter</td><td>90 fps</td><td>type 1/1.8</td></tr>
-<tr><td><a href=https://www.sony-semicon.com/files/62/pdf/p-12_IMX415-AAQR_AAMR_Flyer.pdf>Sony IMX415</a></td><td>3840 (H) x 2160 (V) (8.3mp)</td><td>rolling shutter</td><td>90 fps</td><td>type 1/2.8</td></tr>
 <tr><td><a href=https://www.framos.com/wp-content/uploads/FSM-IMX678_V1A_Datasheet_v1.0d_Brief.pdf>Sony IMX678</a></td><td>3840 (H) x 2160 (V) (8.3mp)</td><td>rolling shutter</td><td>  72 fps</td><td>type 1/1.8</td></tr>
+<tr><td><a href=https://www.sony-semicon.com/files/62/pdf/p-12_IMX415-AAQR_AAMR_Flyer.pdf>Sony IMX415</a></td><td>3840 (H) x 2160 (V) (8.3mp)</td><td>rolling shutter</td><td>90 fps</td><td>type 1/2.8</td></tr>
 <tr><td>Sony IMX267</td><td>                    (8.9mp)</td><td>              </td><td>         </td><td>          </td></tr>
 <tr><td>Sony IMX255</td><td>                    (8.9mp)</td><td>              </td><td>         </td><td>          </td></tr>
 <tr><td>Sony IMX253</td><td>                   {12.3mp)</td><td>              </td><td>         </td><td>          </td></tr>
 <tr><td>Sony IMX304</td><td>                   {12.3mp)</td><td>              </td><td>         </td><td>          </td></tr>
+<tr><td><a href=https://www.sony-semicon.com/files/62/flyer_industry/IMX183CLK-J_CQJ-J_Flyer.pdf>Sony IMX183CLK-J</a></td><td>5544 (H) x 3694 (V) (20.5mp)</td><td>rolling shutter</td><td>22 fps</td><td>type 1/1.2</td></tr>
+<tr><td><a href=https://www.framos.com/en/products/imx283cqj-c-21902>Sony IMX283CQJ</a></td><td>5496 (H) x 3694 (V) (20.3mp)</td><td>rolling shutter</td><td>21.4 fps</td><td>type 1/1.2</td></tr>
+<tr><td><a href=https://www.framos.com/en/products/imx294cjk-c-19482>Sony IMX294CJK-C</a></td><td>3792 (H) x 2824 (V) (10.7mp)</td><td>rolling shutter</td><td>60 fps</td><td>type 4/3</td></tr>
 </table>
 <h4><a href=adapter/#M42_C-mount>M42 to 30mm to 23.2mm Microscope Adapter Camera Eyepiece Tube w/ C-mount Thread</a></h4>
 <h4><a href=Nikon/relay2x>generic approx 2x photo relay lenses</a></h4>
 <h4><a href=https://www.theimagingsource.com/de-de/support/download/>Possible USB camera software source</a></h4>
+<h4><a href=https://commonlands.com/blogs/technical/cmos-sensor-size>CMOS Image Sensor Format Type Size</a></h4>
+Consider the application for which many small images sensors are designed and sold:&nbsp security<ul>
+<li>relatively large fields of view, with rays converging towards sensors
+<li>pixels near (rectangular) sensor corners are liable to vignetting,
+because fewer rays captured
+<li>Consequently, 16mm (instead of 25.4) diagonal is considered 1-inch
+<li>recall that an original application for (1-inch) C-mount was 16mm (diagonal) film
+<li>In Sony sensor-speak, 16mm is Type 1/1.2 format
+<li>Microscope objective fields > 18mm may benefit from e.g. a <a href=https://www.amazon.com/dp/B0DPRNG3PW>0.7-0.75X photo relay lens</a>,<br>
+but direct projection from fully corrected objectives to Type 1/1.2 format sensor<br>
+probably yields better image quality that imperfect relay optics.
+<li>4/3 IMX294CJK sensor may make
+<a href=https://www.cloudynights.com/topic/595518-asi294mc-pro-first-14bit-43%E2%80%B3-cooled-color-camera/>ZWO
+ ASI294MC</a> the best current dual-purpose camera 
+</ul>
+
+<h4>Dual-purpose (astro and microscopy) image sensors</h4><ul>
+<li>Astronomy hobbyists traditionally want relatively low resolution sensors<br> for higher sensitivity, cooled for lower noise.
+<li>perhaps unintuitively, given modern CMOS fill factors,<br>properly downsampling higher resolution sensor images to lower res improves quality
+<li>instead of super long single exposures (a film tradition),<br> multiple shorter digital exposures can be averaged
+<li>While astro sensors traditionally employ larger M42/T2 threads (minimizing vignetting),<br>C/CS-mount adapters for microscopy are readily available
+<li>Applicable (dual-purpose) astro sensors:<ul>
+<li><a href=https://www.amazon.com/dp/B0BJK69Y4F>SVBONY SV705C</a> (IMX485)
+<li><a href=https://www.bhphotovideo.com/c/product/1824009-REG/zwo_asi585mc_usb3_0_color_astronomy.html>ZWO ASI585MC</a> (IMX585) - 
+    <a href=https://agenaastro.com/media/articles/ZWO_Astronomy_Camera_Specifications_August2022.pdf>lower noise</a>
+<li><a href=https://www.amazon.com/dp/B0B6WM2FP4>ZWO ASI678MC</a> (IMX678)
+<li><a href=https://www.amazon.com/dp/B07BPV6R1K>ZWO ASI183MC</a> (IMX183)
+<li><a href=https://www.highpointscientific.com/zwo-asi294mc-usb-3-color-astronomy-camera>ZWO ASI294MC</a> (IMX294CJK)
+</ul>
+<li>cheaper C-mount<ul>
+<li><a href=https://www.amazon.com/dp/B0CW1PTSCB>Arducam B0477</a> (IMX283) -
+ <a href=https://www.arducam.com/product/arducam-20mp-usb-3-0-camera-module-with-16mm-c-mount-lens-b0477/>home page</a>
+<li><a href=https://www.amazon.com/dp/B0DBV5QPJN>Arducam B0498</a> (IMX585) - lower noise,
+ <a href=https://www.arducam.com/product/presalesarducam-8-3mp-imx585-manual-focus-usb-3-0-camera-module-with-16mm-c-mount-lens/>home page</a>
+</ul>
 
 </td></tr><tr><td align=center>
 maintained by <a href="https://github.com/blekenbleu">blekenbleu</a><br>
