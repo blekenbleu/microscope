@@ -19,7 +19,7 @@ C-mount (and too similar CS-mount) are often used for microscope camera adapters
  and industrial USB/HDMI digital camera bodies,<br>
 for which one common brand is <a href=https://www.hayear.com/?list/36>Hayear</a>.</a><br><br>
 
-C-mount cameras with nominal 1-inch sensors are liable to vignetting:<br>
+C-mount cameras with nominal 1-inch sensors are liable to <a href=https://en.wikipedia.org/wiki/Vignetting>vignetting</a>:<br>
 <img src=https://www.thorlabs.de/images/tabimages/C-Mount_Specs_A2-780.jpg><ul>
 <li><i>CS-mount FFD</i>:&nbsp <code>12.526mm</code>
 <li><i>metric thread spec for both</i>:&nbsp <code>25.4x0.75</code>
@@ -88,9 +88,17 @@ probably yields better image quality that imperfect relay optics.
 <li>Astronomy hobbyists traditionally want relatively low resolution sensors<br> for higher sensitivity, cooled for lower noise.
 <li>perhaps unintuitively, given modern CMOS fill factors,<br>properly downsampling higher resolution sensor images to lower res improves quality
 <li>instead of super long single exposures (a film tradition),<br> multiple shorter digital exposures can be averaged
-<li>While astro sensors traditionally employ larger M42/T2 threads (minimizing vignetting),<br>
+<li>While astro sensors traditionally employ larger M42x0.75 (T2) threads (minimizing vignettng),<br>
 	C/CS-mount adapters for microscopy are readily available
-<li>Applicable (dual-purpose) astro sensors:<ul>
+<li>Astro cameras typically lack UV+IR blocking (AKA
+<a href=https://www.highpointscientific.com/astronomy-hub/post/how-tos/how-to-read-a-filter-transmission-chart-and-choose-a-filter>luminance
+ filters</a>),<br> available in 48mm or 1.25",
+	but <a href=https://www.astronomik.com/en/photographic-filters/luminance-filter-l-1-l-2-l-3.html?size=127>rarely T2 thread</a><ul>
+<li><a href=https://www.aliexpress.us/item/3256807784820978.html>M48 female - T2 male adapter</a>
+<li><a href=https://www.aliexpress.us/item/3256805133654361.html>M48 (AKA 2") UV IR Cut Filter</a>
+<li><a href=https://www.aliexpress.us/item/3256807162243638.html>T2 female - M48 male adapter</a>
+</ul>
+<li>Applicable (for dual-purpose) RGB astro sensors:<ul>
 <li><a href=https://www.amazon.com/dp/B0BJK69Y4F>SVBONY SV705C</a> (IMX485)
 <li><a href=https://www.bhphotovideo.com/c/product/1824009-REG/zwo_asi585mc_usb3_0_color_astronomy.html>ZWO ASI585MC</a> (IMX585) - 
     <a href=https://agenaastro.com/media/articles/ZWO_Astronomy_Camera_Specifications_August2022.pdf>lower noise</a>
@@ -100,7 +108,10 @@ probably yields better image quality that imperfect relay optics.
 	 (<a href=https://www.touptek-astro.com/G3CMOS10300KPA>IMX294MC</a>) - 21.63mm diagonal, 4K@120fps
 <li><a href=https://www.highpointscientific.com/zwo-asi294mc-usb-3-color-astronomy-camera>ZWO ASI294MC</a> (IMX294CJK)
 <li><a href=https://www.amazon.com/dp/B0CT26PMXT>SVBONY SV605CC</a> (IMX533) - 80% Qe, less amp glow, dark current than IMX294
-<li><a href=>ToupTek ATR 2600c</a> (IMX571) 28.3mm diagonal - APS-C
+<li><a href=>ToupTek ATR2600c</a> (IMX571) 28.3mm diagonal - APS-C<br>
+		&emsp; also ZWO ASI2600MC, Ultra Astro 26, QHY268, RisingCam ATR3CMOS26000KPA,<br>
+	 &emsp; Player One Poseidon-C Pro, Orion Starshoot-G26, ATIK Apx26, Moravian C1×26000,<br>
+	&emsp;  OGMA AP26CC, Altair 26C, Omegon veTEC 571 C
 </ul>
 <li>cheaper C-mount<ul>
 <li><a href=https://www.amazon.com/dp/B0CW1PTSCB>Arducam B0477</a> (IMX283) -
