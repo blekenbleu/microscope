@@ -29,7 +29,7 @@ with Nikon 210mm objectives and [F trinocular heads](Trinoc/#F)...
 	Otherwise, with unmodified [type T or UW trinocular heads](Trinoc/#T)
 	or type F with chimney,  
 a [CF PL relay lens](CFPL2.5X) refocuses objective image planes at camera sensors.  
-Alternatively, [generic aftermarket approx 2x photo relay lenses](relay2x) are available,  
+Alternatively, [generic aftermarket approx 2x photo relay lenses](relay2x.htm) are available,  
 requiring less separation between cameras and relay lens.
 
 A (sprayed black) PVC reducer from 2 inch o.d. to 1.5 inch i.d.  
