@@ -43,7 +43,15 @@
 
  &emsp; - internal vs external;&nbsp; brightfield vs darkfield<br>
  &emsp; - <a href="Köhler.htm">K&ouml;hler illumination</a>
-<li><a href="#INF">Infinity microscope vignetting</a>
+
+<a name="INF"></a><details><summary>Infinity microscope <a href=../camera.htm#vm>vignetting</a></summary>
+Rays from an infinity objective are only parallel when from a single point;<br>
+with increasing distance between objective and field lens,<br>
+a larger field lens is needed to avoid vignetting:<br>
+<img src="infinity_objective.jpg"><br clear=all>
+An <a href="../Nikon/DIC/#BFP">objective's back focal plane</a> is where <i>parallel</i> rays entering that objective focus.
+</details>
+
 <li><a href="#LENS">Lens formulae</a>
 <li><a href="#RMS">Magnification: &nbsp;Classic compound microscope</a>
 <li><a href="https://www.microscopyu.com/tutorials">Nikon's extensive Interactive Tutorials</a>
@@ -88,14 +96,6 @@ if <code>Objective</code> + <code>Infinity space</code> + <code>Tube lens</code>
 While infinity objectives may be used with a <a href=../tube.htm>tube lens</a> of any focal length,<br>
 specified magnification depends on that focal length.<br>
 
-<a name="INF"><h4>Infinity microscope vignetting</h4></a>
-Rays from an infinity objective are only parallel when from a single point;<br>
-with increasing distance between objective and field lens,<br>
-a larger field lens is needed to avoid vignetting:<br>
-<img src="infinity_objective.jpg"><br clear=all>
-An <a href="../Nikon/DIC/#BFP">objective's back focal plane</a> is where <i>parallel</i> rays entering that objective focus.<br>
-<br>
-
 <a name="CONTRAST"><h3>Contrast and non-image-forming light.</h3></a>
 While lenses focus images on your retina or other sensor,<br>
 they do not prevent <i>other</i> photons from also stimulating sensors.<br>
@@ -106,15 +106,7 @@ Some non-image-forming light can be blocked by an iris diaphragm, as in this dia
 <img alt="light field microscope diagram" src="Sketch-of-our-light-field-microscope.png"><br clear=all>
 <i>Ignore that <font color=blue>Microlens Array</font>. <font color=red>Relay part</font> is afocal photography, where <b>Field Lens</b> is the eyepiece or ocular.</i><br>
 <br>
-<a name="COR"><h3>Corrections and aberrations</h3></a>
-Lens aberrations exist for 2 main reasons:&nbsp incorrect geometries and changes in diffraction with wavelength.<br>
-<a href="#CI">Correcting</a> aberrations is typically accomplished by combining different simple lenses.<br>
-In traditional finite compound microscopes, objective aberrations were typically corrected in eyepieces,<br>
-with the amount of correction differing among manufactures, with mismatches problematic for <a href="#TL">N.A. &gt;0.6 or so</a>.<br>
-AO, Reichert, Zeiss and Leica infinity objective are corrected
-in <a href=../tube.htm>tube lenses</a>, typically located near heads' bottom port.<br>
-Nikon CF and modern Olympus infinity objectives are fully corrected, so useful with e.g. telephoto camera lenses.<br>
-<br>
+
 <a name="LENS"><h3><font color=green>Lens formulae</font></h3></a>
 <b>simple</b>
 <li><code>1/f = 1/do + 1/di</code> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {1} <code>di</code> <i>becomes</i>
@@ -142,20 +134,29 @@ For 160mm tube length, a 10x objective has 16mm focal length<br>
 and a 10x eyepiece has 25mm focal length.<br>
 For infinity scopes, substitute "<a href=../tube.htm>tube lens</a> focal length" for "tube length".<br>
 Olympus infinity objectives expect 180mm <a href=../tube.htm>tube lens</a> focal length;<br>
-Nikon finite CF BD and M Plan objectives expect 210mm tube length.<br>
-<br>
+Nikon finite CF BD and M Plan objectives expect 210mm tube length.</ul>
+
 <a name="SA"><h3>Aberrations</h3></a>
+Lens aberrations exist for 2 main reasons:&nbsp incorrect geometries and changes in diffraction with wavelength.<ul>
 <li>Spherical lens surfaces are relatively easy to produce, but not ideal.
 <li>Combining different <a href="https://en.wikipedia.org/wiki/Dispersion_(optics)">dispersions</a> and
-<a href="https://en.wikipedia.org/wiki/Refractive_index">refractive indices</a> can <a href="https://en.wikipedia.org/wiki/Doublet_(lens)">reduce lens aberrations</a>.<br>
-<a href="https://www.microbehunter.com/microscopy-forum/viewtopic.php?p=107377#p107377"><b>Compensate vs correct</b></a>
-<li>correction == positive correction in a downstream optic for upstream optic deficiency.
-<li>compensation == inverse correction in a downstream optic to cancel upstream optic over correction.<br>
-<a name="CA"><b>Chromatic Aberrations</b> (CA)<br></a>
+<a href="https://en.wikipedia.org/wiki/Refractive_index">refractive indices</a> can
+	 <a href="https://en.wikipedia.org/wiki/Doublet_(lens)">reduce lens aberrations</a>.</ul>
+<a href="https://www.microbehunter.com/microscopy-forum/viewtopic.php?p=107377#p107377">Compensate vs correct</a><ul>
+<a name=COR><li>correction</a> == positive correction in a downstream optic for upstream optic deficiency.
+<li>compensation == inverse correction in a downstream optic to cancel upstream optic over correction.</ul>
+<a name="CA">Chromatic Aberrations (CA)</a><ul>
 <li>Correcting optics display blue interior CA and yellow exterior CA; &nbsp;reversed in compensating optics.
 <br>
+<a href="#CI">Correcting</a> aberrations is typically accomplished by combining different simple lenses.<br>
+In traditional finite compound microscopes, objective aberrations were typically corrected in eyepieces,<br>
+with the amount of correction differing among manufactures, with mismatches problematic for <a href="#TL">N.A. &gt;0.6 or so</a>.<br>
+AO, Reichert, Zeiss and Leica infinity objective are corrected
+in <a href=../tube.htm>tube lenses</a>, typically located near heads' bottom port.<br>
+Nikon CF and modern Olympus infinity objectives are fully corrected, so useful with e.g. telephoto camera lenses.</ul>
+
 <a name="NA">
-<h3>Aperture</h3>
+<h3>Aperture</h3><ul>
 <a href="https://www.photomacrography.net/forum/viewtopic.php?f=29&t=44327"><b>effective</b></a> (working aperture)</a>
 <li>Coupled lenses, stopped in the front, with the rear lens focused at infinity: &nbsp;<code>m * lens aperture</code>
 <li>Single lens, focused by extension: &nbsp;<code>(m+1) * lens aperture</code>
@@ -167,49 +168,55 @@ Nikon finite CF BD and M Plan objectives expect 210mm tube length.<br>
 <li>A better approximation would be <code>f=1/(2*N.A.) * M/(M+1)</code>, where <code>M</code> is rated magnification.
 <br><a href=https://en.wikipedia.org/wiki/Numerical_aperture><b>numeric</b></a>:&nbsp; <code>N.A. = n * sin(&alpha;)</code>, <i>where</i> <code>n</code> is (1.0 for air) index of refraction</a>
 <li><img align=top src=N.A.jpg>
-<br>
-<h3>"<a href="https://www.photomacrography.net/forum/viewtopic.php?f=29&t=8895">pupil ratio</a>"
- compensates effective aperture for adding extension</h3><br>
-<h3>aperture vs N.A. : &nbsp;<code>N.A. = 1/(2 * f/#)</code></h3><table border=2><tr>
+
+<h4>"<a href="https://www.photomacrography.net/forum/viewtopic.php?f=29&t=8895">pupil ratio</a>"
+ compensates effective aperture for adding extension</h4>
+
+<h4>aperture vs N.A. : &nbsp;<code>N.A. = 1/(2 * f/#)</code></h4><table border=2><tr>
 <td> f/# </td><td>  1.2  </td><td>  1.4 </td><td>  1.8 </td><td>  2  </td><td>  2.8  </td><td>   4  </td><td>  5.6  </td><td>   8   </td><td>  11  </td><td>   16   </td></tr><tr>
 <td> N.A.</td><td> .4167 </td><td> .357 </td><td> .417 </td><td> .25 </td><td> .1786 </td><td> .125 </td><td> .0893 </td><td> .0625 </td><td> .045 </td><td> .03125 </td></tr></table>
+</ul>
 
 <a name="EF"><h4>Canon EF sensor-to-flange depth: &nbsp;<a href="https://briansmith.com/flange-focal-distance-guide/">44mm</a></h4></a>
-Add to extension tubes when testing lens focal lengths<br><br>
+Add to extension tubes when testing lens focal lengths
 
 <a name="COND"><h3><a href="https://www.microbehunter.com/microscopy-forum/viewtopic.php?p=107377#p107377">Condensers</a>: &nbsp;achro, aplanatic, Abbe; &nbsp;finite vs infinity</h3></a>
 <a name="ABBE"><b><a href="http://www.microscopy-uk.org.uk/mag/artapr08/pj-optimal.html">Tweaking Abbe condensers</a></b></a><br>
  &emsp; <a href=https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=14352><code>resolution = 1.22 * wavelength / (Objective_NA + Condenser_NA)</code></a><br>
-Abbe flaws begin to bother above N.A. 0.6-7; elevate an Abbe to optimize filling the objective's back aperture.<br><br>
+Abbe flaws begin to bother above N.A. 0.6-7; elevate an Abbe to optimize filling the objective's back aperture.
 
 <a name="DoF"><h3><a href="https://www.photomacrography.net/forum/viewtopic.php?f=8&t=19755">Depth-of-Focus scaling</a></h3></a>
 <code>DoF2 = DoF1 * (f/#2/f/#1) * (m1/m2)**2</code>
 
 <a name="DIOP"><h4>Diopter vs focal length:  &nbsp;divide into 1000mm, e.g. <code>diopter = 2 for 500mm fl</code></h4></a>
-<br>
+
 <a name="Z"><h3><a href="https://zerenesystems.com/cms/stacker/docs/tables/macromicrodof">Zerene macro step size tables</a>: &nbsp;magnification vs frame width, magnification vs aperture</h3></a>
 <li>magnification <code>m = sensor width / frame width</code>
 <li>DoF (mm) = <code>0.0022*(((m+1)*f/#)/m)**2</code>
 <li>DoF (mm) = <code>0.00055/(N.A.**2)</code>
-<br>
+
 <h3><a href="https://zerenesystems.com/cms/stacker/docs/tables/landscapes">Zerene landscape focus tables</a></h3>
-<br>
+
 <a name="FAQ"><h3><a href="https://www.photomacrography.net/forum/viewtopic.php?f=29&t=24891">1:4 to 8:1 magnification FAQ</a></h3></a>
-<img src="http://www.photomacrography.net/forum/userpix/671_Getting_closer_1_table_3__1.png">
-<br>
+<img src="http://www.photomacrography.net/forum/userpix/671_Getting_closer_1_table_3__1.png"><br><br>
+
+<hr>
+
 <a name="DIN"><h3 align=center></a><a href="https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/">Objective standards - DIN:&nbsp 45mm parfocal distance</a></h3>
 <p align=center>
 <img src=https://www.edmundoptics.com/media/abuhwt3i/fig-8.jpg></p>
-<a name="TL"><h3 align=center>Finite tube length error impact on aberrations</h3></a><ul>
-<li>N.A. 0.25 160 TL immersion objectives tolerate over 200mm tube length before issues.
-<li>N.A. 0.65 160 TL immersion objectives tolerate only 5mm tube length error.</ul>
-<p align=center>
+
+<a name="TL"><h3 align=center>Finite tube length error impact on aberrations</h3></a>
+<table align=center>
+<tr><td><ul>
+<li>N.A. 0.25 160 TL immersion objectives tolerate > 200mm tube length error.
+<li>N.A. 0.65 160 TL immersion objectives tolerate <= 5mm tube length error.</ul></td></tr>
+</table><p align=center>
 Tolerance goes inversely as <a href="#NA">N.A.</a>^4:<br>
 <img src="TLvNA.png"><br clear=all>
 <a href="TLvNA.txt"><i>gnuplot</i></a><br>
 <i>More tube length discussion</i>:&nbsp <a href="https://www.photomacrography.net/forum/viewtopic.php?p=258045#p258045">Raynox DCR-150 tube assembly with flocking</a>
 </p>
-<p align=center>
 <a name="CG"><h3 align=center>Coverglass thickness error impact vs N.A.</h3></a>
 <p align=center>
 <img src="Coverslip.jpg"><br clear=all>
