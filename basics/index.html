@@ -3,6 +3,40 @@
 <link rel='stylesheet' type='text/css' href='../../static/my.css'>
 
 <title>Microscope Basics</title>
+
+<!--- scrollable table https://www.w3docs.com/snippets/html/how-to-create-a-table-with-a-fixed-header-and-scrollable-body.html --->
+<style>
+  .fixed_header {
+    width: 840px;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  .fixed_header tbody {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    height: 450px;
+  }
+  .fixed_header thead tr {
+    display: block;
+  }
+  .fixed_header thead {
+    background: black;
+    color: #fff;
+  }
+  .fixed_header th {
+    padding: 5px;
+    text-align: left;
+    width: 210px;
+	height: 50px;
+  }
+  .fixed_header td {
+    padding: 5px;
+    text-align: left;
+    width: 210px;
+	height: 200px;
+  }
+</style>
 </head>
 
 <body>
@@ -258,11 +292,84 @@ Perhpas lower power finite objectives have aberrations deliberately introduced f
 <li>"Neo" is Zeiss Neofluar
 <li>"HD" is Zeiss Epiplan darkfield
 <li>"Phase" is probably Zeiss (since compatible only with Zeiss KPL eyepiece)<br>
- With phase contrast microscopy optimized for green light, chromatic aberrations are less of an issue.
+ With phase contrast optimized for green light, chromatic aberrations are less of an issue.
 </ul><p>As might be expected, a CFW eyepiece (applying no corrections) worked poorly with most Zeiss,
 <br> &nbsp &nbsp &nbsp;but OK with a (perhaps Nikon CF-based) Hoffman modulation 40X.</p>
 
-<p> &nbsp <br> &nbsp <br> </p> <p> &nbsp <br> &nbsp <br> </p> <p> &nbsp <br> &nbsp <br> </p> <p> &nbsp <br> &nbsp <br> </p>
+<h3><a name=OC>Objective comparisons</a></h3><p>
+Captures by Sony &alpha;7 RII and <a href=https://creatorscloud.sony.net/catalog/en-us/ie-desktop/>Imaging Edge Desktop</a>;<br>
+ &emsp; focus by 27-inch Apple LED 2560x1440 Cinema Display.<br>
+Image circles downsampled 2x;&nbsp; Bayer matrix camera sensor<br> &emsp; captures red and blue channels every other row and column.<br>
+Infinity objectives by Nikon vs AO trinocular head vs telephoto lens;<br>
+ &emsp; CF finite objectives by direct projection.</p>
+
+<table class="fixed_header">
+  <thead>
+    <tr>
+      <th>Eclipse</th>
+      <th>AO trinoc</th>
+      <th>telephoto</th>
+      <th>Direct CF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5x CF Plan BD</td>
+      <td>5x CF Plan BD</td>
+      <td>5x CF Plan BD</td>
+      <td>5x CF MPlan</td>
+    </tr>
+    <tr>
+      <td>5x MSPlan</td>
+      <td>5x MSPlan</td>
+      <td>5x MSPlan</td>
+      <td>4x CF Plan APO</td>
+    </tr>
+    <tr>
+      <td>10x CF Plan BD</td>
+      <td>10x CF Plan BD</td>
+      <td>10x CF Plan BD</td>
+      <td>10x CF MPlan</td>
+    </tr>
+    <tr>
+      <td>10x MSPlan</td>
+      <td>10x MSPlan</td>
+      <td>10x MSPlan</td>
+      <td>10x CF ED Plan</td>
+    </tr>
+    <tr>
+      <td>20x CF Plan</td>
+      <td>20x CF Plan</td>
+      <td>20x CF Plan</td>
+      <td>20x CF MPlan</td>
+    </tr>
+    <tr>
+      <td>20x MSPlan</td>
+      <td>20x MSPlan</td>
+      <td>20x MSPlan</td>
+      <td>20x CF ED Plan</td>
+    </tr>
+    <tr>
+      <td>20x UMPlan</td>
+      <td>20x UMPlan</td>
+      <td>20x UMPlan</td>
+      <td>20x Plan APO</td>
+    </tr>
+    <tr>
+      <td>20x Ach</td>
+      <td>20x Ach</td>
+      <td>20x Ach</td>
+      <td>20x Plan APO</td>
+    </tr>
+  </tbody>
+</table>
+20x is my favorite objective power.<br>
+For AO Model 10 without coverslips, Olympus MSPlan objectives were the hot setup.
+<ul><b>First impressions:</b>
+<li>100W Optiphot 2 uncomfortable bright for < 20x;&nbsp; view with ND400
+<li>Nikon infinity parcentricity is poor.
+<li>&lt; 10x objective fields diameters appear limited by RMS thread.
+</ul>
 
 </td></tr><tr><td align=center>
 maintained by <a href="https://github.com/blekenbleu">blekenbleu</a><br>
