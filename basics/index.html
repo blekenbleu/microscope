@@ -297,6 +297,15 @@ Perhpas lower power finite objectives have aberrations deliberately introduced f
 <br> &nbsp &nbsp &nbsp;but OK with a (perhaps Nikon CF-based) Hoffman modulation 40X.</p>
 
 <h2><a name=OC>Objective comparisons</a></h2><p>
+20x is my favorite objective power.<br>
+Using <a href=https://user.xmission.com/~psneeley/Personal/AO%20Series%2010%20MicroStar%20Reference%20Manual%2010-101%201965.pdf>AO Series 10</a>
+for objects without coverslips,
+<a href=https://alanwood.net/downloads/olympus-bhm-bh-2-brochure.pdf>Olympus MSPlan objectives</a> were the hot setup,<br>
+but I first acquired a cheap set of <a href=../index.html#CAL>MEIJI S.PLAN M</a> objectives.<br>
+Despite mostly using reflected illumination,<br>
+objectives are more easily evaluated using calibration slides,<br>
+with or without coverslips according to objective engravings.
+</p><p>
 Captures by Sony <a href=https://www.sony.com/electronics/support/res/manuals/4576/45769831M.pdf>&alpha;7 RII</a>
 	and <a href=https://support.d-imaging.sony.co.jp/app/imagingedge/en/instruction/4_1_connection.php>Imaging Edge Desktop</a>;<ul compact>
 <li>M mode
@@ -313,14 +322,14 @@ Captures by Sony <a href=https://www.sony.com/electronics/support/res/manuals/45
 
 Many APS-C sensors can more pixels in objective image circles, but<br>
 35mm sensor enables flexible (e.g. square and precisely centered) crop in post-processing.<br>
-Unlike too many Canon cameras, Sony gets power from USB while tethered.<br>
+Unlike too many Canons, Sony cameras get power from USB while tethered.<br>
 Although Bayer matrix camera sensor<br> &emsp; captures red and blue channels every other row and column,<br>
  &emsp; downscaling images 2x impacts sharpness.<br>
-Example center crops from 24 megapixel image of 100x100 1mm grid:
+Example crops near center from 42 megapixel image of 100x100 1mm grid @50x:
 <table width=840><tr>
-<td><img width=250 src=center_grid.jpg><br>original</td>
-<td><img width=250 src=center_G36000.jpg><br>2x downscale, then rescale</td>
-<td><img width=250 src=diff.jpg><br>difference</td></tr></table><br>
+<td><img width=250 src=cmp/center_grid.jpg><br>original</td>
+<td><img width=250 src=cmp/resampled.jpg><br>2x downscale, then rescale</td>
+<td><img width=250 src=cmp/diff.jpg><br>difference</td></tr></table><br>
 
 Infinity objectives by Nikon vs AO trinocular head vs telephoto lens;<br>
  &emsp; CF finite objectives by direct projection.</p>
@@ -336,10 +345,22 @@ Infinity objectives by Nikon vs AO trinocular head vs telephoto lens;<br>
   </thead>
   <tbody>
     <tr>
+      <td>4x BE Plan</td>
+      <td>4x BE Plan</td>
+      <td>4x BE Plan</td>
+      <td>4x B Plan</td>
+    </tr>
+    <tr>
       <td>5x CF Plan BD</td>
       <td>5x CF Plan BD</td>
       <td>5x CF Plan BD</td>
       <td>5x CF MPlan</td>
+    </tr>
+    <tr>
+      <td>5x SPlanM</td>
+      <td>5x SPlanM</td>
+      <td>5x SPlanM</td>
+      <td>4x CF Plan APO</td>
     </tr>
     <tr>
       <td>5x MSPlan</td>
@@ -351,19 +372,31 @@ Infinity objectives by Nikon vs AO trinocular head vs telephoto lens;<br>
       <td>10x CF Plan BD</td>
       <td>10x CF Plan BD</td>
       <td>10x CF Plan BD</td>
-      <td>10x CF MPlan</td>
-    </tr>
-    <tr>
-      <td>10x MSPlan</td>
-      <td>10x MSPlan</td>
-      <td>10x MSPlan</td>
       <td>10x CF ED Plan</td>
     </tr>
     <tr>
+      <td>10x SPlanM</td>
+      <td>10x SPlanM</td>
+      <td>10x SPlanM</td>
+      <td>10x CF BD Plan</td>
+    </tr>
+    <tr>
+      <td>10x MSPlan</td>
+      <td>10x MSPlan</td>
+      <td>10x MSPlan</td>
+      <td>10x CF BD Plan</td>
+    </tr>
+    <tr>
       <td>20x CF Plan</td>
       <td>20x CF Plan</td>
       <td>20x CF Plan</td>
-      <td>20x CF MPlan</td>
+      <td>20x CF M Plan DIC</td>
+    </tr>
+    <tr>
+      <td>20x SPlanM</td>
+      <td>20x SPlanM</td>
+      <td>20x SPlanM</td>
+      <td>20x CF M Plan LWD</td>
     </tr>
     <tr>
       <td>20x MSPlan</td>
@@ -381,16 +414,22 @@ Infinity objectives by Nikon vs AO trinocular head vs telephoto lens;<br>
       <td>20x Ach</td>
       <td>20x Ach</td>
       <td>20x Ach</td>
-      <td>20x Plan APO</td>
+      <td>20x CF E Plan</td>
     </tr>
   </tbody>
 </table>
-20x is my favorite objective power.<br>
-On AO Model 10 for objects without coverslips, Olympus MSPlan objectives were the hot setup.
-<ul><b>First impressions:</b>
-<li>100W Optiphot 2 uncomfortably bright for < 20x;&nbsp; view with ND400
-<li>Nikon infinity parcentricity is poor.
-<li>&lt; 10x objective field diameters appear limited by RMS thread.
+<b>First impressions:</b><ul>
+<li>100W Optiphot 2 eyepiece images are uncomfortably bright for < 20x;&nbsp; view with ND400
+<li>Image circles are constrained by RMS thread for objectives &lt; 10x power.
+<li>Image circles are constrained by tube lens aperture for objectives &gt; 10x power.
+<li>10x objective images are not circular when objectives are not parcentric with tube lens
+<li><a href=https://www.digicamdb.com/specs/sony_alpha-7r-ii/><b>Sony &alpha;7-RII sensor is 35.9mm and 7952 pixels wide</b></a><ul>
+<li>From <code><a href=https://imagej.net/ij/>ImageJ</a> - Analyze - Plot Profile</code>, Olympus MSPlan 5x edges are &gt; 10 pixels wide:
+<br><img src=cmp/MSP5xPlotProfile.png>
+<br>... while Nikon CF Plan Epi 20x edges are 6 pixels wide:
+<br><img src=cmp/CFIP20xPlotProfile.png>
+<br>... the limit for minimal aliasing artifacts.
+</ul>
 </ul>
 
 </td></tr><tr><td align=center>
