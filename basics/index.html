@@ -10,12 +10,13 @@
     width: 840px;
     table-layout: fixed;
     border-collapse: collapse;
-	border-spacing: 1px;
+	border-spacing: 0px;
   }
   .fixed_header tbody {
     display: block;
     width: 100%;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     height: 450px;
   }
   .fixed_header thead tr {
@@ -23,18 +24,21 @@
   }
   .fixed_header thead {
     background: black;
-    color: #fff;
+    color: white;
   }
   .fixed_header th {
     padding: 0px;
     text-align: center;
-    width: 210px;
+    width: 208px;
 	height: 50px;
+  }
+  .fixed_header th:last-child {
+	width: 216px;
   }
   .fixed_header td {
     padding: 0px;
     text-align: center;
-    width: 210px;
+    width: 206px;
 	border: 1px solid black;
   }
 </style>
@@ -62,24 +66,29 @@
 <li><a href="../camera.htm#Combo">Camera + Microscope Combinations</a><br>
  &emsp; <a href="https://www.photomacrography.net/forum/viewtopic.php?f=29&t=12147">FAQ: How can I hook a microscope objective to my camera?</a>
 <li><a href="#EF">Canon EF DSLR sensor-to-flange depth</a>
-<li><a href="#CI">Correcting eyepieces</a> or <a href=../tube.htm>tube lenses</a>
 <li><a href="#COND">Condensers</a>
 <li><a href="#CJ">Conjugate focal planes</a>
 <li><a href="#CONTRAST">Contrast and non-image-forming light: &nbsp;K&ouml;hler</a>
+<li><a href="#CI">Correcting eyepieces</a> or <a href=../tube.htm>tube lenses</a>
 <li><a href="#CG">Coverglass error impact vs N.A.</a>
-<li><a href="#DIN">Finite objective standards:&nbsp DIN vs JIS</a>
 <li><a href="#DoF">Depth-of-Focus scaling</a>
 <li><a href="#DIOP">Diopter vs focal length</a><a name=MT>
 <li></a><a href="https://www.cambridge.org/core/journals/microscopy-today/article/guidelines-for-understanding-magnification-in-the-modern-digital-microscope-era/E99CB37B30B5DCF7654A17A44A6A682F#sec6"><b>Empty magnification</b>:&nbsp Numeric Aperture and Rayleigh's criterion</a>
+<li><a href="#DIN">Finite objective standards:&nbsp DIN vs JIS</a>
 <li><a href="#TL">Finite tube length error impact on aberrations</a>
-<li><b>Illumination</b> - <a href=../camera.htm#DIA>diascopic</a> (thru specimens) vs episcopic (above objects):<br>
+<li><a href="#FL">Floaters</a>
+<li><b>Illumination</b><br>
+ &emsp; - internal vs external;&nbsp; brightfield vs darkfield<br>
+ &emsp; - <a href="Köhler.htm">K&ouml;hler illumination</a><br>
+ &emsp; - <a href=../camera.htm#DIA>diascopic</a> (thru specimens) vs episcopic (above objects):<br>
  &emsp; <img src="Compound_Rays.jpg"><br clear=all>
  &emsp; <i>compound microscope with both episcope and diascopic illumination</i><br><br>
 
- &emsp; - internal vs external;&nbsp; brightfield vs darkfield<br>
- &emsp; - <a href="Köhler.htm">K&ouml;hler illumination</a>
-
-<a name="INF"></a><details><summary>Infinity microscope <a href=../camera.htm#vm>vignetting</a></summary>
+<li><a href="#LENS">Lens formulae</a>
+<li><a href="#RMS">Magnification: &nbsp;Classic compound microscope</a>
+<li><a href="https://www.microscopyu.com/tutorials">Nikon's extensive Interactive Tutorials</a>
+<li><a href="#OBJ">Objectives:&nbsp finite vs infinity, corrections, N.A., image circle</a> - <a href=#OC><b>Comparisons</b></a>
+<a name="INF"></a><details><summary> &nbsp;<a href=../camera.htm#vm>Vignetting</a> - infinity microscope</summary>
 Rays from an infinity objective are only parallel when from a single point;<br>
 with increasing distance between objective and field lens,<br>
 a larger field lens is needed to avoid vignetting:<br>
@@ -87,31 +96,26 @@ a larger field lens is needed to avoid vignetting:<br>
 An <a href="../Nikon/DIC/#BFP">objective's back focal plane</a> is where <i>parallel</i> rays entering that objective focus.
 </details>
 
-<li><a href="#LENS">Lens formulae</a>
-<li><a href="#RMS">Magnification: &nbsp;Classic compound microscope</a>
-<li><a href="https://www.microscopyu.com/tutorials">Nikon's extensive Interactive Tutorials</a>
-<li><a href="#OBJ">Objectives:&nbsp finite vs infinity, corrections, N.A., image circle</a>
 <li><a href="#Z">Zerene focus stacking</a>
 <li><a href="#FAQ">1:4 to 8:1 magnification FAQ</a>
 
-<h2>Compound microscope rays</h2>
-
 <a name=CJ>
-<h3>Conjugate Planes</h3></a>
+<h3>Conjugate Planes - Compound microscope rays</h3></a>
 Worth watching:&nbsp; <a href=https://www.youtube.com/watch?v=6mGEGs7vI00>Abbe's experiments and conjugate planes</a>
 <div align=center><img src="ConjugatePlanes.png"></div><dl>
 <dt>8 interleaved focal planes:
 <dd>Specimen image at:<br>
 	&emsp; (F1)field diaphragm, (F2)stage, (F3)intermediate image plane, (F4)retina (or camera sensor)
 <dd>Source image at:<br>
-	&emsp; (A1)lamp filament, (A2)condenser aperture, (A3)objective back focal plane, (A4)behind pupil
+	&emsp; (A1)lamp filament, (A2)condenser aperture, (A3)objective back focal plane, (<font color=red>A4</font>)behind pupil
 </dl>
 
-<h3>Floaters</h3>
-Note that Lamp Filament conjugate plane (A4) is behind the pupil;<br>
+<a name=FL><h3>Floaters</h3></a><div align=center>
+Note that Lamp Filament conjugate plane (<font color=red>A4</font>) is <i>inside the eye</i>:<br>
+<img src=https://zeiss-campus.magnet.fsu.edu/tutorials/basics/microscopeconjugateplanes/opticaltraintutorialfigure1.jpg></div><br>
 <img width=640 src=https://healthjade.com/wp-content/uploads/2017/09/Eye-Floaters.jpg><br>
-Vitreous Strands in that region are liable to be illuminated.<br>
-Different eyepiece relief can shift Lamp Filament conjugate plane location, affecting floater visibility.
+Vitreous Strands are liable to be illuminated.<br>
+Different eyepiece relief can move Lamp Filament conjugate plane, affecting floater visibility.
 
 <a name="OBJ"><h3>Finite vs infinity objectives;&nbsp <a href="#COR">corrections</a>, <a href="#NA">N.A.</a>, image circle</h3></a>
 To prime your thinking about lenses and ray diagrams, review
@@ -334,7 +338,7 @@ Example crops near center from 42 megapixel image of 100x100 1mm grid @50x:
 Infinity objectives by Nikon vs AO trinocular head vs telephoto lens;<br>
  &emsp; CF finite objectives by direct projection.</p>
 
-<table class="fixed_header">
+<table class="fixed_header" cellspacing="0" cellpadding="0">
   <thead>
     <tr>
       <th>Eclipse</th>
@@ -345,13 +349,13 @@ Infinity objectives by Nikon vs AO trinocular head vs telephoto lens;<br>
   </thead>
   <tbody>
     <tr>
-      <td>4x BE Plan</td>
+      <td><a href=cmp/BE4x3.2.JPG><img width=100% src=cmp/BE4x3.2.JPG></a><br>4x BE Plan</td>
       <td>4x BE Plan</td>
       <td>4x BE Plan</td>
       <td>4x B Plan</td>
     </tr>
     <tr>
-      <td>5x CF Plan BD</td>
+      <td><a href=cmp/CFiBD5x3.25.JPG><img width=100% src=cmp/CFiBD5x3.25.JPG></a><br>5x CF Plan BD</td>
       <td>5x CF Plan BD</td>
       <td>5x CF Plan BD</td>
       <td>5x CF MPlan</td>
@@ -369,7 +373,7 @@ Infinity objectives by Nikon vs AO trinocular head vs telephoto lens;<br>
       <td>4x CF Plan APO</td>
     </tr>
     <tr>
-      <td>10x CF Plan BD</td>
+      <td><a href=cmp/CFiBD10x3.JPG><img width=100% src=cmp/CFiBD10x3.JPG></a><br>10x CF Plan BD</td>
       <td>10x CF Plan BD</td>
       <td>10x CF Plan BD</td>
       <td>10x CF ED Plan</td>
@@ -393,28 +397,40 @@ Infinity objectives by Nikon vs AO trinocular head vs telephoto lens;<br>
       <td>20x CF M Plan DIC</td>
     </tr>
     <tr>
-      <td>20x SPlanM</td>
+      <td><a href=cmp/SPlanM20x1.5.JPG><img width=100% src=cmp/SPlanM20x1.5.JPG></a><br>20x SPlanM</td>
       <td>20x SPlanM</td>
       <td>20x SPlanM</td>
       <td>20x CF M Plan LWD</td>
     </tr>
     <tr>
+      <td><a href=cmp/MSPlan20x1.4.JPG><img width=100% src=cmp/MSPlan20x1.4.JPG></a><br>20x MSPlan</td>
       <td>20x MSPlan</td>
       <td>20x MSPlan</td>
-      <td>20x MSPlan</td>
+      <td>20x CF BD Plan</td>
+    </tr>
+    <tr>
+      <td><a href=cmp/CFiBD20x1.6.JPG><img width=100% src=cmp/CFiBD20x1.6.JPG></a><br>20x CFi BD Plan</td>
+      <td>20x CFi BD Plan</td>
+      <td>20x CFi BD Plan</td>
       <td>20x CF ED Plan</td>
     </tr>
     <tr>
-      <td><a href=cmp/Ach20x1.6nc.jpg><img width=100% src=cmp/Ach20x1.6nc.jpg></a><br>20x Ach no coverslip</td>
+      <td><a href=cmp/UMPlanFl20x1.45.JPG><img width=100% src=cmp/UMPlanFl20x1.45.JPG></a><br>20x UMPlanFl</td>
+      <td>20x UMPlanFl</td>
+      <td>20x UMPlanFl</td>
+      <td>20x Plan APO</td>
+    </tr>
+    <tr>
+      <td><a href=cmp/Ach20x1.4nc.jpg><img width=100% src=cmp/Ach20x1.4nc.jpg></a><br>20x Ach no coverslip</td>
       <td>20x Ach</td>
       <td>20x Ach</td>
       <td>20x CF E Plan</td>
     </tr>
     <tr>
-      <td><a href=cmp/PN40x0.7nc.jpg><img width=100% src=cmp/PN40x0.7nc.jpg></a><br>40x UMPlan<br> no coverslip</td>
-      <td>40x UMPlan</td>
-      <td>40x UMPlan</td>
-      <td>40x Plan APO</td>
+      <td><a href=cmp/PN40x0.7nc.jpg><img width=100% src=cmp/PN40x0.7nc.jpg></a><br>40x Plan N<br> no coverslip</td>
+      <td>40x Plan N</td>
+      <td>40x Plan N</td>
+      <td>40x CF Plan</td>
     </tr>
   </tbody>
 </table>
@@ -430,6 +446,8 @@ Infinity objectives by Nikon vs AO trinocular head vs telephoto lens;<br>
 <br><img src=cmp/CFIP20xPlotProfile.png>
 <br>... the limit for minimal aliasing artifacts.
 </ul>
+<li>Image dynamic ranges are well within JPEG limits; no need for camera RAW.
+<li>JPEG quality 85 reduces image sizes about 90% from Sony <code>Extra fine</code> with imperceptible impacts.
 </ul>
 
 </td></tr><tr><td align=center>
