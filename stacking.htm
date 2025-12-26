@@ -12,45 +12,48 @@
 
 <h3>focus stacking</h3></a>
 
-<p><a href="macro_links.htm#FOCUS"><em>links</em></a><br />
-Some images, including highly magnified, want more depth of focus.<br />
-Other than by retaking with smaller aperture<br />
-(which is liable to increasing noise, motion blur and/or diffraction),<br />
-combining sharper parts of multiple images of a scene <br />
-captured at overlapping focal distance increments<br />
+<p><a href="macro_links.htm#FOCUS"><em>links</em></a><br>
+Some images, including highly magnified, want more depth of focus.<br>
+Other than by retaking with smaller aperture<br>
+(increasing noise, motion blur and/or diffraction),<br>
+combining sharper parts of multiple images of a scene<br>
+captured at overlapping focal distance increments<br>
 is called <em>focus stacking</em> and involves two parts:</p>
 <ul>
   <li>capturing those images (AKA focus bracketing)</li>
   <li>combining them</li>
 </ul>
 
-<p>Some cameras support focus bracketing<br />
-using so-called autofocus lenses which include mechanisms  <br />
+<p>Some cameras support focus bracketing<br>
+using so-called autofocus lenses which include mechanisms<br>
 by which cameras can change their focus.</p>
 
-<p>An alternative for focus bracketing is by mechanically incrementing<br />
-distance from camera and lens to scene object[s]. <br />
-Macro rails do this, as can microscope stage focus knobs.  <br />
-<a href="https://www.wemacro.com">WeMacro</a> offers automation for both
-a focus <a href="https://www.wemacro.com/?product=micromate-bracket-only">dial</a>:<br />
-<img width=640 src="https://www.wemacro.com/wp-content/uploads/2017/06/mm-working-1.jpg" alt="MicroMate bracket" /><br />
-… and <a href="https://www.wemacro.com/?product=wemacro-rail">rack</a>:<br />
-<img width=640 src="https://www.photoinfos.com/Fototechnik/Zubehoer/Einstellschlitten/Wemacro/Canon-100mm-macro-is-usm-14.jpg" alt="WeMacro rail" /></p>
+Focus bracket by incrementing camera and lens distance to scene object[s].<br>
+<a href="https://www.wemacro.com">WeMacro</a> automates both<ul>
+<li>focus <a href="https://www.wemacro.com/?product=micromate-bracket-only">knobs</a>:<br>
+<img width=640 src="https://www.wemacro.com/wp-content/uploads/2017/06/mm-working-1.jpg" alt="MicroMate bracket"><br>
+<li><a href="https://www.wemacro.com/?product=wemacro-rail">rails</a>:<br>
+<img width=640 src="https://www.photoinfos.com/Fototechnik/Zubehoer/Einstellschlitten/Wemacro/Canon-100mm-macro-is-usm-14.jpg" alt="WeMacro rail"></ul>
 
 <h3 id="focus-stacking-software">Focus stacking software</h3>
-<p>Two well-regarded commercial image stacking software offerings are<br />
-<a href="https://www.heliconsoft.com/heliconsoft-products/helicon-focus/">Helicon</a>
-and <a href="https://zerenesystems.com/cms/stacker">Zerene</a>,  <br />
-where Helicon favors those wanting a completely automated approach,<br />
-with Zerene supporting more tweaking and touching up stacked images.</p>
+<p>Two well-regarded commercial image stacking software offerings:<ul>
+<li><a href="https://www.heliconsoft.com/heliconsoft-products/helicon-focus/">Helicon</a>
+	favors those wanting a completely automated approach
+<li><a href="https://zerenesystems.com/cms/stacker">Zerene</a>
+supports more tweaking and touching up stacked images.<br>
+	<a href="https://zerenesystems.com/cms/stacker/docs/tables/macromicrodof">Zerene macro step size tables</a>:
+	<br> &emsp; magnification vs frame width, magnification vs aperture<ul>
+	<li>magnification <code>m = sensor width / subject frame width</code>
+	<li>DoF (mm) = <code>0.0022*(((m+1)*f/#)/m)**2</code>
+	<li>DoF (mm) = <code>0.00055/(N.A.**2)</code></ul></ul>
 
-<p><a href="https://www.researchgate.net/publication/269630893_Focus_stacking_Comparing_commercial_top-end_set-ups_with_a_semi-automatic_low_budget_approach_A_possible_solution_for_mass_digitization_of_type_specimens">2014 comparing CombineZP, Auto-Montage, Helicon Focus and Zerene Stacker</a></p>
+<p><a href="https://www.researchgate.net/publication/269630893_Focus_stacking_Comparing_commercial_top-end_set-ups_with_a_semi-automatic_low_budget_approach_A_possible_solution_for_mass_digitization_of_type_specimens">CombineZP, Auto-Montage, Helicon Focus and Zerene Stacker</a> (2014)</p>
 
 <p>Free solutions includes <a href="https://www.canon-europe.com/support/consumer_products/software/digital-photo-professional.html?language=en&amp;os=windows%2010%20(64-bit)&amp;productid=tcm:13-1870570">Canon’s DPP 4</a>,<br>
- &emsp; which works only for their lenses and cameras with focus bracketing support,<br />
-CombineZP, which does not support 16-bit images,<br />
-Picolay, ImageJ, <a href="https://tawbaware.com/tufusepro_help/tufusepro_help.htm">TuFuse</a>,<br />
-<a href="https://www.jpchacha.com/chasysdraw/">Chasys Draw IES</a> supports CR2/3 and <a href="https://www.jpchacha.com/chasysdraw/help.php?file=artist_process_stack_focus.htm">Focus Stacking</a>,<br />
+ &emsp; which works only for their lenses and cameras with focus bracketing support,<br>
+CombineZP, which does not support 16-bit images,<br>
+Picolay, ImageJ, <a href="https://tawbaware.com/tufusepro_help/tufusepro_help.htm">TuFuse</a>,<br>
+<a href="https://www.jpchacha.com/chasysdraw/">Chasys Draw IES</a> supports CR2/3 and <a href="https://www.jpchacha.com/chasysdraw/help.php?file=artist_process_stack_focus.htm">Focus Stacking</a>,<br>
  &emsp; seemingly without alignment,
 	when stacking for
 	<a href="https://www.jpchacha.com/chasysdraw/help.php?file=artist_tutorials_stacking.htm">image averaging</a>.</p>
@@ -61,17 +64,17 @@ Picolay, ImageJ, <a href="https://tawbaware.com/tufusepro_help/tufusepro_help.ht
 <p>Works internally on bitmaps;  loads but cannot save TIFFs.</p>
 
 <h3 id="on1-photo-raw-2022----free-trial"><a href="https://www.on1.com/products/photo-raw">ON1 Photo RAW 2022</a>  - free trial</h3>
-<p>focus stacking is on the right corner of the photo editing toolbar.<br />
-Good <a href="http://www.picolay.de/workshop/Understanding_Stacking-Parameters.pdf">stacking parameter documentation</a><br />
+<p>focus stacking is on the right corner of the photo editing toolbar.<br>
+Good <a href="http://www.picolay.de/workshop/Understanding_Stacking-Parameters.pdf">stacking parameter documentation</a><br>
 Moving GIFs with perspective shift(?!)</p>
 
 <h3 id="imagej">ImageJ</h3>
 <ul>
   <li><a href="http://bigwww.epfl.ch/demo/edf/">Extended Depth of Field</a></li>
   <li><a href="https://imagej.nih.gov/ij/plugins/stack-focuser.html">Stack Focuser</a></li>
-  <li><a href="https://fiji.sc">Fiji/ImageJ</a><br />
+  <li><a href="https://fiji.sc">Fiji/ImageJ</a><br>
 <a href="https://www.dpreview.com/forums/post/50059191">Discussions thread</a></li>
-  <li><a href="http://wsr.imagej.net/macros/toolsets/MagicMontage.pdf">Auto Montage / MagicMontage</a><br />
+  <li><a href="http://wsr.imagej.net/macros/toolsets/MagicMontage.pdf">Auto Montage / MagicMontage</a><br>
 <a href="https://github.com/imagej/ij1-installer/blob/master/app/macros/toolsets/Magic%20Montage.txt">source</a></li>
 </ul>
 
@@ -82,8 +85,8 @@ Moving GIFs with perspective shift(?!)</p>
   <li><a href="https://snapshot.canon-asia.com/in/article/eng/focus-stacking-a-pro-technique-made-simpler-with-focus-bracketing">simpler tutorial</a></li>
   <li>hack EXIF to fake other lenses support?
     <ul>
-      <li><a href="https://www.exiftool.org">ExifTool by Phil Harvey</a> <a href="https://www.exiftool.org">on SourceForge</a><br />
-<a href="https://adamtheautomator.com/exiftool/">Everything You Ever Wanted to Know about ExifTool</a><br />
+      <li><a href="https://www.exiftool.org">ExifTool by Phil Harvey</a> <a href="https://www.exiftool.org">on SourceForge</a><br>
+<a href="https://adamtheautomator.com/exiftool/">Everything You Ever Wanted to Know about ExifTool</a><br>
 <a href="https://exiftool.org/gui/">ExifToolGUI for Windows v5.xx</a></li>
     </ul>
   </li>
