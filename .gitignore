@@ -4,6 +4,7 @@ _site/
 .jekyll-metadata
 *~
 *.swp
+*.url
 .DS_Store
 Gemfile.lock
 basics/Systematic_design_of_microscope_objectives_Part_I_.pdf
