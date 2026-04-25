@@ -17,7 +17,7 @@
 <h2><a href=https://en.wikipedia.org/wiki/Chromatic_aberration>Chromatic Aberrations</a></h2>
 Chromatic Aberrations result when a lens refracts different wavelengths differently:<br>
 <img width=640 src=CA.png><br>
-<h3>Free software</h3>
+<h3>Free mitigation software</h3>
 <dl><dt><a href=https://rawpedia.rawtherapee.com/Chromatic_Aberration><b>RawTherapee</b></a> - <a href=https://github.com/RawTherapee/RawTherapee>on GitHub</a>
 <dd>Despite the name, also works on e.g. JPEG files.
 <br><a href=https://paulsphotopalace.wordpress.com/a-beginners-guide-to-rawtherapee/>A beginner’s guide</a>
@@ -26,7 +26,12 @@ Chromatic Aberrations result when a lens refracts different wavelengths differen
 <dd><a href=https://pixelretouching.com/rawtherapee-vs-darktable>More modern UI than RawTherapee, but IMO too invasive - wants to manage all images</a>...
 <br>
 <dt><a href=https://hugin.sourceforge.io/tutorials/tca/en.shtml><b>Hugin</b></a>
-<dd><a href=><code>tca_correct</code></a> estimates correction parameters,
+<dd><a href=><code>tca_correct</code></a> estimates correction parameters, but documentation <b><i>sucks</i></b><ul>
+<li><code>-o</code> optvar options <code>abcvde</code> are not explained
+<li>supported file types are not enumerated
+<li>JPEG are accepted, but <a href=https://hugin.sourceforge.io/tutorials/tca/en.shtml>as warned</a>,
+   <br> "trying to correct chromatic aberration of a JPEG photo is a big waste of time".</ul>
+
 <br><a href=https://wiki.panotools.org/Fulla><code>fulla</code></a> applies those corrections
 <br><a href=https://github.com/drinkcat/macro/blob/master/tca_correct/HOWTO>median correction parameters from an image series</a>
 <br><code>tca_correct</code> can be used to <a href=https://lensfun.github.io/calibration-tutorial/lens-tca.html>generate</a> <a href=https://discuss.pixls.us/t/lens-correction-with-modern-cameras/22257/6>custom Lensfun profiles</a> e.g. for RawTherapee
