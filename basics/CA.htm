@@ -15,7 +15,8 @@
 </a>
 <br>
 <h2><a href=https://en.wikipedia.org/wiki/Chromatic_aberration>Chromatic Aberrations</a></h2>
-Chromatic Aberrations result when a lens refracts different wavelengths differently:<br>
+Transverse chromatic aberrations (TCA) are common in refractive optics, e.g. microscopy.<br>
+Chromatic Aberrations result when different wavelengths refract differently:<br>
 <img width=640 src=CA.png><br>
 <h3>Free mitigation software</h3>
 <dl><dt><a href=https://rawpedia.rawtherapee.com/Chromatic_Aberration><b>RawTherapee</b></a> - <a href=https://github.com/RawTherapee/RawTherapee>on GitHub</a>
@@ -24,28 +25,42 @@ Chromatic Aberrations result when a lens refracts different wavelengths differen
 <br>can use Lensfun profiles, but also custom <code>.pp3</code> and <code>.lcp</code> profiles... - <a href=https://rawpedia.rawtherapee.com/Creating_processing_profiles_for_general_use>Creating processing profiles</a>
 <dt><a href=https://docs.darktable.org/usermanual/3.8/en/module-reference/processing-modules/chromatic-aberrations/><b>Darktable</b></a>
 <dd><a href=https://pixelretouching.com/rawtherapee-vs-darktable>More modern UI than RawTherapee, but IMO too invasive - wants to manage all images</a>...
-<br>
-<dt><a href=https://hugin.sourceforge.io/tutorials/tca/en.shtml><b>Hugin</b></a>
-<dd><a href=><code>tca_correct</code></a> estimates correction parameters, but documentation <b><i>sucks</i></b><ul>
-<li><code>-o</code> optvar options <code>abcvde</code> are not explained
-<li>However, <a href=https://lensfun.github.io/calibration-tutorial/lens-tca.html>Lensfun describes Hugin's fourth order polynomial model</a>:
+
+<dt><br><a href=https://hugin.sourceforge.io/tutorials/tca/en.shtml><b>Hugin</b></a>
+<dd><a href=https://hugin.sourceforge.io/docs/manual/Lens_correction_model.html>Hugin lens correction model</a>
+<br><a href=https://librearts.org/2011/10/create-lens-distorsion-models-with-hugin-lens-calibrator/>How to create lens distortion models with Hugin</a>
+<br>&emsp; <a href=https://www.panotools.org/dersch/pscan/pscan.html>Radial shift</a> by third order polynomials is used by e.g. <a href=https://photocreations.ca/radial_distortion/index.html>Panorama Tools</a>
+<br>&emsp; <img src=https://www.panotools.org/dersch/pscan/diagram.PNG>
+
+<dd><br>command-line tool <a href=https://hugin.sourceforge.io/docs/manual/Tca_correct.html><b><code><font size=+2>tca_correct</font></code></b></a> estimates <code>fulla</code> correction parameters
+<br>&emsp; source code <a href=https://lensfun.github.io/manual/v0.3.2/samplecode.html>here</a>
+<ul>
+<li>can <a href=https://lensfun.github.io/calibration-tutorial/lens-tca.html>generate</a> <a href=https://discuss.pixls.us/t/lens-correction-with-modern-cameras/22257/6>custom Lensfun profiles</a> e.g. for RawTherapee
+<li><code>-o</code> optvar options <code>abcvde</code>;&nbsp; <code>de</code> are not explained
+<li><a href=https://lensfun.github.io/><b>Lensfun</b></a> describes <a href=https://lensfun.github.io/calibration-tutorial/lens-tca.html>Hugin's fourth order polynomial model</a>:
 <br>&emsp; <code>Rd = a * Ru^4 + b * Ru^3 + c * Ru^2 + v * Ru</code>
 <li>supported file types are not enumerated
-<li>JPEG are accepted, but <a href=https://hugin.sourceforge.io/tutorials/tca/en.shtml>as warned</a>,
+
+
+<li>JPEG are accepted, but <a href=https://hugin.sourceforge.io/tutorials/tca/en.shtml>tutorial</a> warns,
    <br> "trying to correct chromatic aberration of a JPEG photo is a big waste of time".</ul>
 
-<br><a href=https://wiki.panotools.org/Fulla><code>fulla</code></a> applies those corrections
-<br><a href=https://github.com/drinkcat/macro/blob/master/tca_correct/HOWTO>median correction parameters from an image series</a>
-<br><code>tca_correct</code> can be used to <a href=https://lensfun.github.io/calibration-tutorial/lens-tca.html>generate</a> <a href=https://discuss.pixls.us/t/lens-correction-with-modern-cameras/22257/6>custom Lensfun profiles</a> e.g. for RawTherapee
-<dt><a href=https://github.com/lensfun/lensfun>Lensfun on GitHub</a>
+<br>command-line tool <a href=https://wiki.panotools.org/Fulla><code><font size=+2><b>fulla</b></font></code></a> applies <code>tca_correct</code> corrections
+<br>&emsp; source code <a href=https://hugin.sourceforge.io/docs/html/fulla_8cpp_source.html>here</a>
+<br>&emsp; <a href=https://github.com/drinkcat/macro/blob/master/tca_correct/HOWTO>example corrections for an image series</a>
+
+<dt><br><a href=https://github.com/lensfun/lensfun><b>Lensfun</b></a> on <a href=https://github.com/lensfun/lensfun>GitHub</a>
 <dd><a href=https://lensfun.github.io/calibration/>Lens Calibration</a>
-<dt><a href=https://www.majorgeeks.com/mg/getmirror/picture_window_pro,1.html>Picture Window Pro</a> has <a href=https://www.normankoren.com/Tutorials/Chromatic.html>manual chromatic aberration color fringing correction</a>
+<br><a href=https://lensfun.github.io/manual/v0.3.2/>API</a> and <a href=https://lensfun.github.io/manual/v0.3.2/samplecode.html>sample code</a>
+
+<dt><br><a href=https://www.majorgeeks.com/mg/getmirror/picture_window_pro,1.html>Picture Window Pro</a> has <a href=https://www.normankoren.com/Tutorials/Chromatic.html>manual chromatic aberration color fringing correction</a>
 <dd> that works on JPEG images.
 <dd><img src=transformation.png>
 <br><a href=https://www.dl-c.com/Downloads.html>related downloads</a>
 <dd>- CA settings can be saved and applied to subsequent images.
 
-<dt><br><a href=https://vicrucann.github.io/portfolio/corrca/><b>corrCA</b> - C++ chromatic aberration correction tool based on calibration</a>
+<dt><br><a href=https://github.com/blekenbleu/CorrCA><b>corrCA</b></a> - C++ chromatic aberration estimation and correction tool
+from <a href=https://vicrucann.github.io/portfolio/corrca/>Victoria Rudakova</a>
 <dd>calibration target similar to negative of a microscope calibration slide:
 <br><img src=CAtarget.jpg>
 <font size=+1><pre>Transverse chromatic aberration image correction by color plane warping.
