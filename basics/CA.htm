@@ -76,6 +76,17 @@ Quantitative measurements on real images show that this method allows
 <a href=https://github.com/blekenbleu/CorrCA>GitHub</a> - <a href=https://enpc.hal.science/file/index/docid/858703/filename/main_rudakovv_psivt13.pdf>paper</a> - <a href=https://vicrucann.github.io/contact/>Contact</a>
 </pre></font>
 
+<dt id=tca_correct><b><code>tca_correct + fulla</code> CA correction</b>
+<dd>Using <a href=https://www.ebay.com/itm/257105884005>this calibration slide</a>:
+<br><img src=grid_cal_slide.webp>
+<pre>$ ./tca_correct.exe -o abcv <a href=../Nikon//Metaphot/M6Inf100.jpg>M6Inf100.jpg</a>
+-r -0.0067386:0.0212854:-0.0208362:1.0044219 -b 0.0008056:-0.0013794:0.0010140:1.0003604
+$ ./fulla.exe -r -0.0067386:0.0212854:-0.0208362:1.0044219 \
+ -b 0.0008056:-0.0013794:0.0010140:1.0003604 \
+ -o <a href=../Nikon/Metaphot/correctedM6Inf100.jpg>correctedM6Inf100.jpg</a> M6Inf100.jpg
+Saving correctedM6Inf100.jpg without alpha channel
+because the fileformat does not support
+an alpha channel.</pre>
 </dl>
 
 </td></tr><tr><td align=center>
