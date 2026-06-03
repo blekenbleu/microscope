@@ -63,7 +63,7 @@ Transverse chromatic aberrations (TCA) occur in refractive optics,<br>
 
 <dt><br><a href=https://github.com/blekenbleu/CorrCA><b>corrCA</b></a> - C++ estimation and correction tool
 from <a href=https://vicrucann.github.io/portfolio/corrca/>Victoria Rudakova</a>
-<dd>calibration target similar to negative of a microscope calibration slide:
+<dd>calibration target similar to negative of a <a href=#slide>microscope calibration slide</a>:
 <br><img src=CAtarget.jpg>
 <font size=+1><pre>Transverse chromatic aberration image correction by color plane warping.
 Precise (largely sub-pixel) color channel realignment by:
@@ -73,11 +73,11 @@ Setup uses a single snapshot of black disks pattern on white.
 Quantitative measurements on real images show that this method allows
 - 0.05 pixel color channel average misalignment
 - residual color error reduced by a factor 3 to 6.
-<a href=https://github.com/blekenbleu/CorrCA>GitHub</a> - <a href=https://enpc.hal.science/file/index/docid/858703/filename/main_rudakovv_psivt13.pdf>paper</a> - <a href=https://vicrucann.github.io/contact/>Contact</a>
+<a href=https://github.com/blekenbleu/CorrCA/blob/PPM/BicubicFit.md><b>my GitHub derivative</b></a> - <a href=https://enpc.hal.science/file/index/docid/858703/filename/main_rudakovv_psivt13.pdf>Victoria's paper</a>, <a href=https://vicrucann.github.io/contact/><i>Contact info</i></a>
 </pre></font>
 
 <dt id=tca_correct><font size=+1><b><code>tca_correct + fulla</code></font> CA reduction</b>
-<dd>Using <a href=https://www.ebay.com/itm/257105884005>this calibration slide</a>:
+<dd id=slide>Using <a href=https://www.ebay.com/itm/257105884005>this calibration slide</a>:
 <br><img src=grid_cal_slide.webp>
 <pre>$ ./tca_correct.exe -o abcv <a href=../Nikon//Metaphot/M6Inf100.jpg>M6Inf100.jpg</a>
 -r -0.0067386:0.0212854:-0.0208362:1.0044219 -b 0.0008056:-0.0013794:0.0010140:1.0003604
