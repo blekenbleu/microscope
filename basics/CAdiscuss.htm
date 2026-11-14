@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='../../static/my.css'>
+
+<title>chromatic aberration mitigation</title>
+</head>
+
+<body>
+<div align=center>
+<table class="my_table"><tr><td>
+
+<font size=-1><i><a href="CA.htm">back</a></i></font>
+<a href="https://www.gixen.com/index.php" name="9e092736783d0da1dfd8413d57d10faf" target="_blank" >
+<img align=right src="https://www.gixen.com/images/gixenlink.gif" border="0" alt="Auction Sniper" title="Auction Sniper">
+</a>
+<br>
+<h2>chromatic aberration mitigation</a></h2>
+Images of interest will typically be captured<br>
+ by sensors generating nominally red, green and blue pixels.<br>
+Ideally, microscope calibration slide images would have<br> perfectly registered light squares in dark fields<br>
+with equal red, green and blue amplitudes for each pixel.<ul>
+<li>finite resolution has light squares more nearly circular <a href=https://en.wikipedia.org/wiki/Blob_detection>blobs</a> for some objectives
+<li>chromatic aberrations have red and blue blob centers misregistered from green
+<li>corresponding pixels have different red, green and blue amplitudes.<br>
+&emsp; - reduce color correction errors by histogram analyses:<br>
+<img src=M6Inf100hist.jpg><br>
+.. estimating corresponding blob edge values (see ellipses).
+<li>having identified threshold values to binarize blobs, then perform 2D blob alignments,<br>
+assuming that misregistrations near image centers have overlapped blob centroids.
+<li>Using tabulated corresponding blob centroids as fiducials,<br>
+perform <a href=https://www.researchgate.net/publication/329531291_Nonrigid_registration_Concepts_algorithms_and_applications>non-rigid registration</a> of red and blue images to green.
+<br>&emsp; - <a href=https://pyimreg.github.io/#the-list>non-rigid image registration projects</a>
+<br>&emsp; - <a href=https://stackoverflow.com/questions/10314321/image-registrationnon-rigid-nonlinear>optical flow</a>
+ - in <a href=https://people.csail.mit.edu/celiu/OpticalFlow/>C++</a>
+<li>Save polynomial regression coefficients of centroid corrections<br>
+ as chromatic aberration profile for that objective</ul>
+
+<p>
+<a href=https://www.geeksforgeeks.org/computer-vision/image-registration-methods-in-image-processing/><i>Image Registration Methods</i></a>
+- <a href=https://www.sciencedirect.com/topics/computer-science/nonrigid-registration><i>nonrigid registration</i></a></p>
+</td></tr><tr><td align=center>
+maintained by <a href="https://github.com/blekenbleu">blekenbleu</a><br>
+</td></tr></table></div>
+
+</body></html>
